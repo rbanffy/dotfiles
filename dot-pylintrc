@@ -1,0 +1,32 @@
+[MASTER]
+jobs=0
+suggestion-mode=yes
+
+[MESSAGES CONTROL]
+disable=line-too-long
+
+[BASIC]
+
+# Naming style matching correct argument names.
+argument-naming-style=snake_case
+
+# Naming style matching correct attribute names.
+attr-naming-style=snake_case
+
+# Naming style matching correct class names.
+class-naming-style=PascalCase
+
+# Include a hint for the correct naming format with invalid-name.
+include-naming-hint=yes
+
+# Naming style matching correct module names.
+module-naming-style=snake_case
+
+# Maximum number of lines in a module.
+max-module-lines=1000
+
+[IMPORTS]
+
+# Allow wildcard imports from modules that define __all__.
+allow-wildcard-with-all=no
+
