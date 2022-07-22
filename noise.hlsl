@@ -16,6 +16,7 @@ cbuffer PixelShaderSettings {
   float4 Background;
 };
 
+// Stolen from https://gist.github.com/keijiro/ee7bc388272548396870
 float nrand(float2 uv)
 {
     return frac(sin(dot(uv, float2(12.9898, 78.233))) * 43758.5453);
@@ -31,7 +32,7 @@ float4 main(float4 pos : SV_POSITION, float2 tex : TEXCOORD) : SV_TARGET
     float4 color = shaderTexture.Sample(samplerState, tex);
 
     // Inverts the rgb values (xyz) but don't touch the alpha (w)
-    color.xyz = nrand(float2(tex.x + tex.y, Time))/2.0 + color.xyz;
+    color.xyz = nrand(float2(tex.x * tex.y, Time % 10)) / 8.0 + color.xyz;
 
     // Return the final color
     return color;
