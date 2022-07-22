@@ -31,7 +31,7 @@ float4 main(float4 pos : SV_POSITION, float2 tex : TEXCOORD) : SV_TARGET
     //  float4 is tuple of 4 floats, rgba
     float4 color = shaderTexture.Sample(samplerState, tex);
 
-    // Inverts the rgb values (xyz) but don't touch the alpha (w)
+    // Add random noise to the pixel's RGB (xyz) but don't touch the alpha (w)
     color.xyz = nrand(float2(tex.x * tex.y, Time % 10)) / 8.0 + color.xyz;
 
     // Return the final color
