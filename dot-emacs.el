@@ -16,6 +16,7 @@
  '(column-number-mode t)
  '(custom-enabled-themes '(misterioso))
  '(debug-on-error t)
+ '(fill-column 80)
  '(global-display-fill-column-indicator-mode t)
  '(global-display-line-numbers-mode t)
  '(ido-mode 'both nil (ido))
