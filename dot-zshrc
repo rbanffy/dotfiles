@@ -103,3 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # MacPorts Installer addition on 2019-08-12_at_17:16:08: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
+
+# Virtualenvwrapper stuff
+export VIRTUALENVWRAPPER_PYTHON='/opt/local/bin/python3.10'
+export VIRTUALENVWRAPPER_VIRTUALENV='/opt/local/bin/virtualenv-3.10'
+export VIRTUALENVWRAPPER_VIRTUALENV_CLONE='/opt/local/bin/virtualenv-clone-3.10'
+source /opt/local/bin/virtualenvwrapper.sh-3.10
