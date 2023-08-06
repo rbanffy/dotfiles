@@ -38,4 +38,11 @@
 ;; Remove trailing whitespace on save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; Sun keyboard keys
+(global-set-key  [XF86Cut] 'kill-region)
+(global-set-key  [XF86Copy] 'kill-ring-save)
+(global-set-key  [XF86Paste] 'yank)
+(global-set-key  [XF86Open] 'ido-find-file)
+
+;; Maximize the current window
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
