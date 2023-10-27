@@ -21,12 +21,14 @@ cbuffer PixelShaderSettings {
 // Just ignore the pos parameter.
 float4 main(float4 pos : SV_POSITION, float2 tex : TEXCOORD) : SV_TARGET
 {
+
+    // TODO: We actually will need to transform this to the coordinates that would be
+    // projected on the display plane from the CRT.
+    float2 transformed = tex
+
     // Read the color value at the current texture coordinate (tex)
     //  float4 is tuple of 4 floats, rgba
     float4 color = shaderTexture.Sample(samplerState, tex);
-
-    // TODO: Return the color of the projected CRT image.
-    // sample the texture from a transformed pos coortinate
 
     // Return the final color
     return color;
