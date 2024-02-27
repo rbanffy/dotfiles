@@ -23,7 +23,7 @@
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(magit magit-todos yaml-mode go-mode gradle-mode groovy-mode fill-column-indicator cobol-mode markdown-mode anaconda-mode ansi ansible selectric-mode terraform-mode pyvenv stripe-buffer))
+   '(docker-compose-mode dockerfile-mode magit magit-todos yaml-mode go-mode gradle-mode groovy-mode fill-column-indicator cobol-mode markdown-mode anaconda-mode ansi ansible selectric-mode terraform-mode pyvenv stripe-buffer))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
